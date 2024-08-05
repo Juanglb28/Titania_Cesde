@@ -133,6 +133,10 @@
     border-width: 1px;
 }
 
+nav a {
+    text-decoration: none;
+}
+
 .footer{
     display: flex;
     align-items: start;
