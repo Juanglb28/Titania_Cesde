@@ -1,0 +1,246 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Inknut_semibold";
+    src: url('/Inknut_Antiqua/InknutAntiqua-SemiBold.ttf');
+}
+
+.photo>img{
+    width: 100%;
+    height: 100%;
+}
+
+.photo{
+    height: 100vh;
+    width: 50%;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: row;
+}
+
+.container_gradiant{
+    height: 100vh;
+    width: 50%;
+    background: linear-gradient(to bottom, rgba(9, 29, 13, 1), rgba(225, 195, 158, 1));
+}
+
+.text{
+    position: absolute;
+    height: 100%;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    color: rgb(247, 247, 247);
+
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.text__1{
+    background-color: hsla(0, 100%, 1%, 0.616);    
+    position: relative;
+    width: 25%;
+    height: 45%;
+    top: 15%;
+    left: 36%;
+    font-family: "Inknut_semibold";
+    font-size: medium;
+    text-align: center;
+}
+
+.experience{
+    display: flex;
+    justify-content: center;
+    font-size: medium;   
+}
+
+.text__2{
+    background-color: hsla(0, 100%, 1%, 0.616); 
+    position: relative;
+    top: -40%;
+    left: 78%;
+    width: 20%;
+    height: 65%;
+    font-family: "Inknut_semibold";
+    font-size: medium;
+    text-align: center;
+}
+
+.header{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    background-color: black;
+}
+
+.header__container-logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+.header__logo{
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    
+}
+
+.header__nav{
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 34px;
+    align-self: center;
+}
+
+.header__nav-button{
+    width: 140px;
+    height: 29px;
+    background-color: black;
+    border-color: #E4C195;
+    border-style: ridge;
+    font-family:Inknut Antiqua;
+    color:  #E4C195;
+    border-width: 1px;
+}
+
+.footer{
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 148px;
+    background-color: black;
+}
+
+.footer__left{
+    margin-top: 25px;
+    background-color: rgb(0, 0, 0);
+    height: 148px;
+    width: 100%;
+    font-family:Inknut Antiqua;
+    color:  #E4C195;
+    font-size: x-large;
+    }
+
+.footer__left>p{
+    margin-left: 10%;
+    
+}    
+
+.footer__right{
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+    gap: 60px;
+    background-color: rgb(0, 0, 0);
+    height: 148px;
+    width: 100%;
+}
+
+.facebook_logo{
+    fill: rgb(0, 0, 0);
+    width: 80px;
+    height: 80px;
+    background:rgba(228, 193, 149, 1);
+    padding: 15px; 
+    border-radius: 100%;
+    
+}
+
+.imagesleft{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.imagesleft__1{
+    position: relative;
+    width: 14%;
+    height: 26%;
+    top: 70%;
+    left: 53%;
+    
+}
+
+.imagesleft__1>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.imagesleft__2{
+    position: relative;
+    width: 14%;
+    height: 26%;
+    bottom: -24%;
+    right: -63%;
+    
+}
+
+.imagesleft__2>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.imagesleft__3{
+    position: relative;
+    width: 14%;
+    height: 26%;
+    top:20%;
+    left: 72%;
+    
+}
+
+.imagesleft__3>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.header__home__button{
+    background: rgba(9, 29, 13, 1);
+    border-width: 2px;
+    border-color: rgba(228, 193, 149, 1);;
+    width: 142px;
+    height: 29px;
+    font-family:Inknut Antiqua;
+    color:  #E4C195;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
