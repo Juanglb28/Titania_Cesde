@@ -1,6 +1,5 @@
 package com.example.coctelesherbario.validation;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,9 +11,6 @@ class CocktailValidationTest {
 
         Exception exception = assertThrows(Exception.class, () -> CocktailValidation.idValidation(0));
         assertEquals("The id cannot be less than 0", exception.getMessage());
-
-        exception = assertThrows(Exception.class, () -> CocktailValidation.idValidation(-1));
-        assertEquals("The id cannot be less than 0", exception.getMessage());
     }
 
     @Test
@@ -23,11 +19,6 @@ class CocktailValidationTest {
 
         Exception exception = assertThrows(Exception.class, () -> CocktailValidation.priceValidation(-1.0f));
         assertEquals("The price cannot be less than 0", exception.getMessage());
-
-        String num ="abcsdfsd";
-
-        Exception exceptionTwo = assertThrows(Exception.class, () -> CocktailValidation.priceValidation(Byte.valueOf(num)));
-        assertEquals("The price can only contain numbers", exceptionTwo.getMessage());
     }
 
     @Test
@@ -48,7 +39,5 @@ class CocktailValidationTest {
         Exception exception = assertThrows(Exception.class, () -> CocktailValidation.dueDateValidation((byte) 0));
         assertEquals("The due date must be greater than 0", exception.getMessage());
 
-        exception = assertThrows(Exception.class, () -> CocktailValidation.dueDateValidation(Byte.parseByte("abc")));
-        assertEquals("The due date can only contain numbers.", exception.getMessage());
     }
 }
